@@ -1,0 +1,510 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    /* border: 5px solid red; */
+}
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+.navbar-section{
+    /* border: 2px solid black; */
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 20px 5px 10px rgba(0,0,0, 0.5);
+    width: 100%;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo img{
+    border-radius: 50%;
+    height: 8vh;
+}
+.logo h1{
+    font-size: 2.5rem;
+    color: black;
+    
+}
+/* .logo h1:hover{
+    font-size: larger;
+} */
+.navbar-links{
+    
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links a{
+    color: black;
+    text-decoration: none;
+    padding: 50px;
+    color: black;
+}
+
+.navbar-links a:hover{
+    font-size: larger;
+    cursor: pointer;
+    color: #38578f;
+}
+
+.hero-section{
+    /* border: 2px solid gray; */
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 20px 5px 10px rgba(0,0,0, 0.5);
+    width: 100%;
+}
+
+
+.hero-section video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover; /* This will ensure the video covers the area */
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Send the video behind other content */
+}
+
+.hero-section  h2{
+    position: absolute;
+    top: 40%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for text size */
+    color: whitesmoke; /* Text color */
+    font-size: 3.5rem; /* Adjust font size as needed */
+    text-align: center; /* Center text */
+    z-index: 1; /* Ensure text is above the video */ 
+}
+
+.button-container {
+    position: absolute;
+    bottom: 20%; /* Adjust as needed to position the buttons */
+    left: 50%;
+    transform: translateX(-50%); /* Center the buttons horizontally */
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+    z-index: 1; /* Ensure buttons are above the video */
+}
+
+.hero-button {
+    padding: 15px 30px; /* Adjust padding for button size */
+    font-size: 1.2rem; /* Font size */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.7); /* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.hero-button:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.features-section{
+    /* border: 2px solid green; */
+    height: 90vh;
+    /* background-color: black; */
+    width: 100%;
+}
+/* 
+.recurring-events{
+    border: 2px solid purple;
+    height: 50vh;
+} */
+
+.event-header{
+    margin-top: 20px;
+}
+.event-header h2{
+    /* border: 2px solid pink; */
+    color: black;
+    text-align: center;
+    margin: 50px;
+    font-size: 2rem;
+}
+
+.event-cards{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.mp-card{
+    /* border: 2px solid blue; */
+    width: 30%;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px rgba(229, 227, 227, 0.8);
+    margin-left: 20px;
+}
+
+.mp-card h3,p{
+    color: black;
+    margin-left: 10px;
+}
+
+#prayerimage{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.mp-card p img{
+    border-radius: 50%;
+    height: 3vh;
+}
+
+.zoom-button{
+    position: relative;
+    height: 5vh;
+    width: 20vh;
+    border-radius: 10px;
+    background-color: #dbb24b;
+    border: none;
+    outline: none;
+    margin: 20px;
+}
+
+.zoom-button:hover{
+    cursor: pointer;
+}
+.mp-card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor:pointer;
+}
+
+.daily-message{
+    /* height: 50vh; */
+    width: 100%;
+}
+
+.message-header h3{
+    text-align: center;
+    font-size: 2rem;
+    /* margin-top: 150px; */
+}
+
+.message-body{
+    border: 2px solid white;
+    height: 30vh;
+    border-radius: 20px;
+    margin: 50px;
+    box-shadow: 20px 20px 20px rgba(0,0,0, 0.5);
+}
+
+.message-body p{
+    /* border: 2px solid orange; */
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 40px;
+    margin: 50px;
+   
+}
+
+.footer{
+    /* border: 2px solid black; */
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 20px 5px 10px rgba(0,0,0, 0.5);
+    width: 100%;
+}
+
+.quicklinks{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    width: 20%;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.quicklinks a{
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+
+.quicklinks a:hover{
+    text-decoration: underline;
+    font-size: large;
+    color: #091057
+}
+
+.details{
+    /* border: 2px solid green; */
+    width: 30%;
+    margin-top: 30px;
+}
+
+.details p{
+    text-align: center;
+}
+
+.details h5{
+    text-align: center;
+}
+
+.details p img{
+    border-radius: 50%;
+    height: 30px;
+}
+
+.social-media img{
+    height: 80px;
+}
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.information{
+    /* border: 2px solid pink; */
+    width: 30%;
+    margin-top: 30px;
+}
+
+.information input{
+    height: 40px;
+    border-radius: 10px;
+}
+
+.subscribe-button{
+    height: 40px;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #dbb24b;
+}
+
+.subscribe-button:hover{
+    cursor: pointer;
+}
+
+.copyright p{
+    text-align: center;
+    padding-top: 80px;
+    margin-top: 30px;
+}
+
+
+.hamburger {
+    display: none; /* Hide by default; will show on smaller screens */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: whitesmoke; /* Change to your desired color */
+    margin: 4px 0; /* Space between bars */
+}
+
+/* Media query to show the hamburger menu on smaller screens */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: flex; /* Show hamburger on small screens */
+    }
+
+    .navbar-section{
+        width: 100%;
+    }
+
+    .navbar-links {
+        display: none; /* Hide navigation links by default */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute; /* Position it absolutely */
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0;
+        width: 100%; /* Full width */
+        background-color: white; /* Background color for dropdown */
+        z-index: 1000;
+    }
+
+    .navbar-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .navbar-links a {
+        padding: 10px; /* Add padding for links */
+        text-align: center; /* Center text */
+        border-bottom: 1px solid #ccc; /* Optional: Add a border between links */
+        color: black;
+    }
+    .navbar-links.active {
+        display: flex; /* Show links when 'active' class is added */
+    }
+
+    .hero-section {
+        margin: 0;
+        transition: all 0.3s ease; /* Smooth transition */
+    }
+
+    /* .hero-section video source{
+        width: 100%;
+    }
+     */
+    .hero-section.active {
+        opacity: 0.5; /* Change opacity when menu is active */
+        transform: scale(0.95); 
+    }
+    .button-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-button {
+        padding: 6px; /* Smaller padding for smaller screens */
+        font-size: 0.8em; /* Smaller font size for buttons */
+        height: 2%;
+    }
+
+    .hero-button:hover{
+        background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+        transform: scale(1.05); /* Slightly enlarge on hover */
+    }
+    .hero-section h2 {
+        font-size: 1.8em; /* Smaller font size for smaller screens */
+        margin-top: 20px;
+    }
+
+    .event-cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mp-card{
+        width: 90%;
+    }
+    /* .daily-message{
+        margin-top: 550px;
+    } */
+
+    .message-body p{
+        font-size: 1.2em;
+        /* border: 2px solid gray; */
+        width: 90%;
+        margin: 20px auto;
+        padding: 5px;
+    }
+
+    .message-body{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .footer {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center text */
+    }
+
+    .footer .details, 
+    .footer .quicklinks, 
+    .footer .information, 
+    .footer .copyright {
+        margin-bottom: 15px; /* Space between sections */
+        width: 100%; /* Full width for all sections */
+    }
+
+    .footer h5 {
+        font-size: 1.2em; /* Larger font size for headings */
+    }
+
+    .footer p, .footer a {
+        font-size: 0.9em; /* Maintain font size for text and links */
+    }
+
+    .footer .social-media img {
+        width: 80px; /* Smaller size for social media icons */
+        height: 80px;
+    }
+
+    .footer .subscribe-button {
+        width: 100%; /* Full width for button on smaller screens */
+        padding: 10px; /* Adjust padding */
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+        /* margin-bottom: 200px; */
+    }
+
+    .quicklinks a:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .details p{
+        margin: 0;
+    }
+
+    .details h5{
+        margin: 0;
+    }
+
+    .information input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .quicklinks{
+        position: relative;
+        margin-top: 150px;
+        box-shadow: 20px 5px 10px rgba(120, 119, 119, 0.7);
+    }
+
+    .event-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .daily-message{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 750px;  
+        margin-top: 1300px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 900px;
+
+    }
+
+    
+}
+
+@media (max-width: 430px){
+    .daily-message{
+        margin-top: 490px;
+    }
+}
+
+
+

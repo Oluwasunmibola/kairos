@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Kairos</title>
+</head>
+<body>
+    <!-- navbar section -->
+    <div class="navbar-section">
+        <div class="logo">
+            <img src="../images/kairos-logo.JPG" alt="kairos">
+            <!-- <h1>Kairos</h1> -->
+        </div>
+    
+        <div class="navbar-links">
+            <a href="../html/index.html">Home</a>
+            <a href="../html/about.html">About us</a>
+            <a href="#">Events</a>
+            <a href="#">Resources</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+    </div>
+
+    <!--Hero Section-->
+    <div class="hero-section">
+        <video autoplay loop muted playsinline>
+            <source src="../images/hero-video.mp4" type="video/mp4">
+        </video>
+        <h2>Kairos - Embracing God’s Timing Together.</h2>
+        <div class="button-container">
+            <button class="hero-button join-button"><i>Join the Community</i></button>
+        <button class="hero-button learn-button"><i>Learn more about us</i></button>
+        </div>
+    </div>
+
+    <!--Feature Section-->
+    <div class="features-section">
+        <div class="recurring-events">
+            <div class="event-header">
+                <h2>Recurring Events</h2>
+            </div>
+
+            <div class="event-cards">
+                <div class="mp-card">
+                    <img src="../images/morning-prayers.jpeg" alt="praying" id="prayerimage">
+                    <h3>Morning Prayers</h3>
+                    <p>
+                        <img src="../images/alarm-icon.jpeg" alt="clock"> 6:00am
+                    </p>
+                    <button class="zoom-button">Zoom link</button>
+                    
+                </div>
+
+                <div class="mp-card">
+                    <img src="../images/meditation.jpeg" alt="praying" id="prayerimage">
+                    <h3>Evening Meditation</h3>
+                    <p><img src="../images/alarm-icon.jpeg" alt="clock"> 7:00pm</p>
+                    <button class="zoom-button">Zoom link</button>
+                    
+                </div>
+
+                <div class="mp-card">
+                    <img src="../images/sunday-service.jpeg" alt="praying" id="prayerimage">
+                    <h3>Sunday Service</h3>
+                    <p><img src="../images/alarm-icon.jpeg" alt="clock"> 2:00pm</p>
+                    <button class="zoom-button">Zoom link</button>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="daily-message">
+        <div class="message-header">
+            <h3>Daily Bible Quotes</h3>
+        </div>
+
+        <div class="message-body">
+            <p id="quotes">
+                <i>Your word is a lamp to my feet and a light to my path.</i><br>
+                <i>Psalm 119:105</i>
+                <!-- Psalm 119:105 -->
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="details">
+                <h5>Contact</h5>
+                <p><img src="../images/location-icon.jpg">Location: Arowojobe</p>
+                <p><img src="../images/phone-icon.jpg">Phone: 1234567890</p>
+                <p><img src="../images/email-icon.jpeg">Email: kairos@gmail.com</p>
+            </div>
+            <div class="quicklinks">
+                <h5>Quick Links</h5>
+                <a href="#">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Events</a>
+                <a href="#">Resources</a>
+                <a href="#">Contact us</a>
+            </div>
+
+            <div class="information">
+                <div class="social-media">
+                    <img src="../images/facebook-icon.jpeg">
+                    <img src="../images/instagram-icon.jpg">
+                    <img src="../images/twitter-icon.png">
+                </div>
+                <input placeholder="Email address" type="email"/>
+                <button class="subscribe-button">Subscribe</button>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; kairos 2023. All rights reserved.</p>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="../javascript/navhamburger.js"></script>
+</body>
+
+</html>
